@@ -7,7 +7,7 @@ namespace DatingApp.API.Controllers
     [AllowAnonymous]
     public class FallbackController : Controller
     {
-        public IActionResult index()
+        public IActionResult Index()
         {
             return PhysicalFile(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "index.html"), "text/HTML");
         }
